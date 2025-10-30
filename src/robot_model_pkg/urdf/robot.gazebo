@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo reference="body_link">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="wheel1_link">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="wheel2_link">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="wheel3_link">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="wheel4_link">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      
+      <update_rate>50.0</update_rate>
+      
+      <!-- Left and right wheels (pick one wheel from each side) -->
+      <left_joint>wheel2_joint </left_joint>
+      <right_joint>wheel1_joint </right_joint>
+      
+      <wheel_separation>0.7</wheel_separation>
+      <wheel_diameter>${2 * wheel_link_radius}</wheel_diameter>
+      
+      <max_torque>50.0</max_torque>
+      
+      <command_topic>cmd_vel</command_topic>
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>body_link</robot_base_frame>
+      
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+    </plugin>
+  </gazebo>
+
+
+</robot>
+

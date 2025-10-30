@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="landmark_simulation">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+   
+    <!-- Green external area (4m x 4m), origin shifted to (-2, -2) -->
+    <model name="external_area">
+      <static>true</static>
+      <pose>-3 -3 0 0 0 0</pose>
+      <link name="floor">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>4 4 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4 4 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+   
+    <!-- Red middle landing area (0.5m x 0.5m), positioned at (-0.25, -0.25) relative to the green area -->
+    <model name="landing_area">
+      <static>true</static>
+      <pose>-3 -3 0.05 0 0 0</pose>
+      <link name="landing">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+   
+  </world>
+</sdf>
