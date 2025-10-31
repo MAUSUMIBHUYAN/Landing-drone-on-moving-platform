@@ -29,7 +29,7 @@ source /opt/ros/humble/setup.bash
 ### 4️⃣ Build the Workspace
 ```bash
 colcon build
-```bash
+```
 
 ### 5️⃣ Source the Workspace Setup
 ```bash
