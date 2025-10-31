@@ -13,11 +13,9 @@ cd project_ws
 
 ---
 
-💡 **Explanation:**
-- The first line:  
-  ```bash  
-  → starts the code block and tells Markdown to highlight syntax for bash.
-- The last line:  
+### 🧹 2️⃣ Clean Previous Build Files (if any)
+bash
+rm -rf build/ install/ log/
 
 
 
