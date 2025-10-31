@@ -67,13 +67,3 @@ You may occasionally encounter a **common Gazebo issue** where the **robot or dr
 ```bash
 # Close Gazebo completely and relaunch
 ros2 launch sjtu_drone_bringup multi_robot.launch.py
-
-
-
-
-
-
-
-
-
-
