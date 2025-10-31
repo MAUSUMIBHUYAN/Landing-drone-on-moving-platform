@@ -140,7 +140,7 @@ class FollowDescentDroneController(Node):
         self.bridge = CvBridge(); self.altitude_target = 2.5; self.robot_height = 0.30
         self.follow_area_threshold = 1250; self.descent_area_threshold = 5000; self.land_area_threshold = 8750
         self.follow_altitude = 1.0; self.landing_speed = 0.9; self.land_altitude_threshold = 0.15
-        self.cart_front_offset = 0.25; self.prediction_latency = 0.15
+        self.cart_front_offset = 0.3; self.prediction_latency = 0.15
         self.FOLLOW_GRACE_PERIOD = 0.5; self.LAND_GRACE_PERIOD = 0.3
         self.MPC_PID_SWITCH_ERROR = 0.1
 
