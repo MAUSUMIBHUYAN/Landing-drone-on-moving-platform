@@ -48,6 +48,10 @@ This will open the Gazebo environment with the drone spawned and ready.
 python3 mpc_pid.py
 ```
 
+## 🎥 Demonstration 
+https://github.com/user-attachments/assets/298ca848-afca-43bd-9505-4675c09f31d6
+
+
 
 
 
