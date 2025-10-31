@@ -11,7 +11,7 @@ unzip project_ws.zip
 cd project_ws
 
 
----
+```
 
 ### 🧹 2️⃣ Clean Previous Build Files (if any)
 bash
