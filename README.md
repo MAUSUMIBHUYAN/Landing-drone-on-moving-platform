@@ -51,6 +51,11 @@ python3 mpc_pid.py
 ## 🎥 Demonstration 
 https://github.com/user-attachments/assets/298ca848-afca-43bd-9505-4675c09f31d6
 
+## 📊 Plots and Analysis
+
+All generated plots are stored inside the **`plots/`** folder.  
+
+
 
 
 
