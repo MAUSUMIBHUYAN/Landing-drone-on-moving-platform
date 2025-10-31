@@ -55,6 +55,20 @@ https://github.com/user-attachments/assets/298ca848-afca-43bd-9505-4675c09f31d6
 
 All generated plots are stored inside the **`plots/`** folder.  
 
+---
+
+## ⚠️ Troubleshooting & Notes
+---
+
+You may occasionally encounter a **common Gazebo issue** where the **robot or drone spawns below the ground**, or the **Gazebo world doesn’t load properly**.  
+
+---
+👉 **Fix:**
+```bash
+# Close Gazebo completely and relaunch
+ros2 launch sjtu_drone_bringup multi_robot.launch.py
+
+
 
 
 
