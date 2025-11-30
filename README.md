@@ -76,10 +76,6 @@ The real-world hardware testing is performed on the DJI Tello drone. All control
 ```bash
 test3.py
 ```
-
-
-https://github.com/user-attachments/assets/61a688eb-f9e7-4129-af69-f070418fb07c
-
-
+https://github.com/user-attachments/assets/7ec5b5fb-9b56-457c-a9b3-7f7c9bee6170
 ---
 
