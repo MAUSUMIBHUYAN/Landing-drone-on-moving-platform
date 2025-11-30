@@ -68,3 +68,18 @@ You may occasionally encounter a **common Gazebo issue** where the **robot or dr
 ```bash
 # Close Gazebo completely and relaunch
 ros2 launch sjtu_drone_bringup multi_robot.launch.py
+```
+🛠️ Hardware Implementation
+---
+
+The real-world hardware testing is performed on the DJI Tello drone. All control and landing experiments are implemented in the file:
+```bash
+test3.py
+```
+
+
+https://github.com/user-attachments/assets/61a688eb-f9e7-4129-af69-f070418fb07c
+
+
+---
+
